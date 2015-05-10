@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>One Page Wonder - Start Bootstrap Template</title>
+    <title>James Earle - Profile</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -39,19 +39,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand scroll" href="#james-earle">James Earle</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#about">About</a>
+                        <a class="scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#services">Services</a>
+                        <a class="scroll" href="#projects">Projects</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a class="scroll" href="#resume">Resume</a>
+                    </li>
+                    <li>
+                        <a class="scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -60,12 +63,16 @@
         <!-- /.container -->
     </nav>
 
+    <span id="james-earle"></span>
+
     <!-- Full Width Image Header -->
     <header class="header-image">
         <div class="headline">
             <div class="container">
-                <h1>One Page Wonder</h1>
-                <h2>Will Knock Your Socks Off</h2>
+                <h2 class="header-round">James Earle</h2>
+                <!-- Rounded corners on this container-->
+                <!-- Put a thin bar <h3> that will rotate and contains icons of technologies I am familiar with-->
+                <!-- Either that or a social network bar, facebook, twitter, linkedin, google+, github-->
             </div>
         </div>
     </header>
@@ -73,58 +80,79 @@
     <!-- Page Content -->
     <div class="container">
 
-        <hr class="featurette-divider">
+        <hr class="featurette-divider" id="about">
 
         <!-- First Featurette -->
-        <div class="featurette" id="about">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">This First Heading
-                <span class="text-muted">Will Catch Your Eye</span>
+        <div class="featurette" >
+            <!-- 500x500 likely to large for a headshot, 350 looks good, maybe use for all images?-->
+            <img class="featurette-image img-circle img-responsive pull-right" src="img/portrait-350x350.jpg">
+            <h2 class="featurette-heading">About
+                <span class="text-muted">me</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">I am a senior student at Brock University, St. Catharines, ON., working towards my BSc. (Honours) in Computer Science 
+                and Economics. My interests include all things tech, but I am not limited as my passions are widespread, also being an avid musician and
+                coffee enthusiast.</p>
+
+            <p class="lead"> I have a passion for everything I do, both in my personal and professional life. Work is not something I consider a chore, but rather a challenge
+                where I strive to exceed my own personal best, developing skills and an intricate social network along the way.</p>
         </div>
 
-        <hr class="featurette-divider">
+        <hr class="featurette-divider" id="projects">
 
         <!-- Second Featurette -->
-        <div class="featurette" id="services">
-            <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">The Second Heading
-                <span class="text-muted">Is Pretty Cool Too.</span>
-            </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h2>Personal Projects</h2>
+        <div class="featurette" id="resume" >
+            <a href="http://www.relicapp.net" title="Relic App Homepage" alt="Read more about Relic">
+                <img class="featurette-image img-responsive pull-left" src="img/relic-350x350.jpg">
+            </a>
+            <h2 class="featurette-heading">Relic</h2>
+            <p class="lead">Relic is a mobile application that provides Brock University students a platform for buying and selling textbooks easily.
+                It makes use of Android and iOS platforms, as well as a central MySQL database using PHP services for data transfer.</p>
+
+            <p class="lead">While originally for a capstone project course, myself and the associated developers have continued to pursue the idea to see how it may benefit local students. Read more 
+                <a href="http://www.relicapp.net">here</a>, or see below for a commercial outlining the application. 
+            </p>
+
+            <hr class="featurette-divider-sub">
+
+            <iframe style="display:block;margin-left:auto;margin-right:auto;" align="middle" width="560" height="315" src="https://www.youtube.com/embed/_47d4hSHr3c" frameborder="0" allowfullscreen></iframe>
         </div>
 
         <hr class="featurette-divider">
 
         <!-- Third Featurette -->
         <div class="featurette" id="contact">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">The Third Heading
-                <span class="text-muted">Will Seal the Deal.</span>
-            </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <a href="http://www.csbreakdown.com" title="CS Breakdown Homepage" alt="Read more about CS Breakdown">
+                <img class="featurette-image img-responsive pull-left" src="img/csbreakdown-350x350.jpg">
+            </a>
+            <h2 class="featurette-heading">CS Breakdown</h2>
+            <p class="lead">CSBreakdown is an educational series on topics in Computer Science ranging from advanced algorithm design to detailed mathematical proofs. The series aims to provide high quality, in depth, and understandable instruction on the selected topics to benefit future Computer Science students. Similar to Relic, this application also began as a collaboration for course work with an academic colleague, but has since grown beyond the scope of the classroom. It is hoped that in the near future we will have videos targeting people of all skill levels. Read more, or watch a video at the <a href="http://www.csbreakdown.com">CS Breakdown Homepage.</a></p>
         </div>
 
         <hr class="featurette-divider">
 
-        <!-- Footer -->
-        <footer>
+    </div>
+    <!-- /.container -->
+    
+    <!-- Footer -->
+    <div class="container">
+        <footer class="footer-image">
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; James Earle 2015</p>
                 </div>
             </div>
         </footer>
-
     </div>
-    <!-- /.container -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Smooth Scroll -->
+    <script src="js/scroll.js"></script>
 
 </body>
 

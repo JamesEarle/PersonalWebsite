@@ -8,15 +8,27 @@ body {
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 .header-image {
     display: block;
     width: 100%;
     text-align: center;
-    background: url('http://placehold.it/1900x500') no-repeat center center scroll;
+    background-color: #7CB2A3; /* Light green */
+    /*background: url('../img/background.jpg') no-repeat center center scroll;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.header-round {
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 
 .headline {
@@ -35,12 +47,33 @@ body {
     background: rgba(255,255,255,0.9);
 }
 
+.headline h3 {
+    font-size: 43px;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
+    padding-bottom: 4px;
+}
+
 .featurette-divider {
-    margin: 80px 0;
+    margin: 60px 0;
+}
+
+.featurette-divider-sub {
+    margin: 30px 0;
 }
 
 .featurette {
     overflow: hidden;
+
+    /* Adding borders around each featurette might look strange*/
+    /**/
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 5px solid rgba(178, 98, 75, 0.15);
+
+    padding: 50px; /**/
 }
 
 .featurette-image.pull-left {
@@ -51,12 +84,22 @@ body {
     margin-left: 40px;
 }
 
+.featurette-image.pull-right-big {
+    height: 500px;
+    width: 500px;
+    margin-left: 40px;
+}
+
 .featurette-heading {
     font-size: 50px;
 }
 
 footer {
     margin: 50px 0;
+}
+
+.footer-image {
+    text-align: center;
 }
 
 @media(max-width:1200px) {
@@ -78,6 +121,12 @@ footer {
 
     .featurette-image.pull-right {
         margin-left: 20px;
+    }
+
+    .featurette-image.pull-right-big {
+        height: 500px;
+        width: 500px;
+        margin-left: 40px;
     }
 
     .featurette-heading {
