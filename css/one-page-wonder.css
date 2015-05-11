@@ -76,6 +76,22 @@ body {
     padding: 50px; /**/
 }
 
+.bordered {
+    border: 2px solid rgba(100, 100, 100, 0.15);
+    border-radius: 10px;
+}
+
+.bulletless {
+    list-style-type: none;
+}
+
+.body-centered {
+    text-align: center;
+    display:inline;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 .featurette-image.pull-left {
     margin-right: 40px;
 }
