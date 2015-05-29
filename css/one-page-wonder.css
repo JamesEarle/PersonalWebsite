@@ -26,9 +26,10 @@ body {
 }
 
 .header-icon {
+    position: relative;
     display: inline;
     text-align: center;
-    margin:10px;
+    margin:0px;
     text-decoration: none !important;
 }
 
@@ -37,10 +38,25 @@ body {
     left:50%;
 }
 
+.embed-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px; /*we'll see */
+    height: 0;
+}
+
+.embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /*Probably wont use this one, looks odd with two grey bars*/
 .header-round-sub {
     border-radius: 25px;
-    width: 30%;
+    width: 25%;
 }
 
 .header-round {
