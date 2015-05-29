@@ -29,6 +29,7 @@ body {
     display: inline;
     text-align: center;
     margin:10px;
+    text-decoration: none !important;
 }
 
 .center {
