@@ -25,9 +25,21 @@ body {
     -o-background-size: cover;
 }
 
+.header-icon {
+    display: inline;
+    text-align: center;
+    margin:10px;
+}
+
 .center {
     top:50%;
     left:50%;
+}
+
+/*Probably wont use this one, looks odd with two grey bars*/
+.header-round-sub {
+    border-radius: 25px;
+    width: 30%;
 }
 
 .header-round {
