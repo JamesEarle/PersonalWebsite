@@ -30,6 +30,7 @@ body {
     display: inline;
     text-align: center;
     margin:0px;
+    padding:0px;
     text-decoration: none !important;
 }
 
@@ -55,8 +56,13 @@ body {
 
 /*Probably wont use this one, looks odd with two grey bars*/
 .header-round-sub {
+    width: 23%;
     border-radius: 25px;
-    width: 25%;
+}
+
+.img-icon {
+    width: 36px;
+    height: 36px;
 }
 
 .header-round {
