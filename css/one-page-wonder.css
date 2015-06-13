@@ -63,6 +63,7 @@ body {
 .header-round-sub {
     width: 23%;
     border-radius: 25px;
+    behavior: url(js/PIE.php);
 }
 
 .img-icon {
@@ -75,6 +76,7 @@ body {
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -o-border-radius: 25px;
+    behavior: url(js/PIE.php);
 }
 
 .headline {
@@ -136,6 +138,16 @@ body {
     display:inline;
     margin-left:auto;
     margin-right:auto;
+}
+
+.image-normal {
+    width: 350px;
+    height: 350px;
+}
+
+.image-extra {
+    width: 250px;
+    height: 250px;
 }
 
 .featurette-image.pull-left {
