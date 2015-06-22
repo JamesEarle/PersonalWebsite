@@ -24,17 +24,60 @@ body {
     -o-background-size: cover;
 }
 
-.header-icon {
+.footer-icon-linkedin, .footer-icon-twitter,
+.footer-icon-github, .footer-icon-google-plus {
     position: relative;
-    display: inline;
+    display: inline-block;
     text-align: center;
+    vertical-align:text-top;
     margin:0px;
     padding:0px;
-    text-decoration: none !important;
+    width:48px;
+    height:48px;
+    background-position: 0 0;
+    float:left;
+    text-decoration: none !important; 
+}
+
+.footer-icon-twitter {
+    background: url('../img/twitter-spritesheet.png');
+}
+
+.footer-icon-linkedin {
+    background: url('../img/linkedin-spritesheet.png');
+}
+
+.footer-icon-github {
+    background: url('../img/github-spritesheet.png');
+}
+
+.footer-icon-google-plus {
+    background: url('../img/google-plus-spritesheet.png');
+}
+
+.footer-icon-linkedin:hover, .footer-icon-twitter:hover,
+.footer-icon-google-plus:hover {
+    animation: five .5s steps(5) 1;
+    background-position: -300px 0;
+}
+
+.footer-icon-github:hover {
+    animation: six .5s steps(6) 1;
+    background-position: -350px 0;
+}
+
+@keyframes six {
+    0% { background-position: -50px 0; }
+    100% { background-position: -350px 0; }
+}
+
+@keyframes five {
+    0% { background-position: -50px 0; }
+    100% { background-position: -300px 0; }
 }
 
 .icon-wrapper{ 
-    width:186px; 
+    width: 235px; 
     margin:0 auto; 
 }
 
@@ -57,7 +100,7 @@ body {
 .header-round-sub {
     width: 23%;
     border-radius: 25px;
-    behavior: url(js/PIE.php);
+    behavior: url('../js/PIE.php');
 }
 
 .img-icon {
@@ -70,7 +113,7 @@ body {
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -o-border-radius: 25px;
-    behavior: url(js/PIE.php); /* For IE */
+    behavior: url('../js/PIE.php'); /* For IE */
 }
 
 .headline {
