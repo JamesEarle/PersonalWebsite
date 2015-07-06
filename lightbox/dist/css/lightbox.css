@@ -209,3 +209,18 @@ body:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+
+/* Smaller screen resolutions still need work. */
+@media(max-width: 940px) {
+  .lightbox {
+    transform: scale(0.85);
+    transition: .15s ease-in-out;
+  }
+}
+
+@media(max-width: 860px) {
+  .lightbox {
+    transform: scale(0.60);
+    transition: .15s ease-in-out;
+  }
+}
