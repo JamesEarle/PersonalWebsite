@@ -186,7 +186,16 @@ body {
     width: 250px;
     height: 250px;
 }
-
+.grow { 
+    transition: .15s ease-in-out;
+}
+.grow:hover { 
+    transform: scale(1.05); 
+    transition: .15s ease-in-out;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    box-shadow: 0px 0px 4px 2px #777777;
+}
 .featurette-image.pull-left {
     margin-right: 40px;
 }

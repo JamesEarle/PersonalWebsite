@@ -17,6 +17,9 @@
     <!-- Custom CSS -->
     <link href="css/one-page-wonder.css" rel="stylesheet">
 
+    <!-- Lightbox CSS -->
+    <link href="lightbox/dist/css/lightbox.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -92,7 +95,25 @@
         </div>
 
         <div class="featurette" >
-            <img class="featurette-image img-circle img-responsive pull-right image-normal" src="img/portrait-350x350.jpg">
+            <div>
+                <a href="img/portrait-350x350.jpg" data-lightbox="about" data-title="Brock Campus - Computer Commons.">
+                    <img class="featurette-image img-circle img-responsive pull-right image-normal grow" src="img/portrait-350x350.jpg">
+                </a>
+                <a href="img/msp-event.jpg" data-lightbox="about" data-title="My first event as a Microsoft Student Partner!" style="display: none;">
+                    <img class="image-normal" src="img/msp-event.jpg" alt="">
+                </a>
+                <a href="img/acm-team.jpg" data-lightbox="about" data-title="Arriving at the uWindsor campus for the ACM-ICPC." style="display: none;">
+                    <img class="image-normal" src="img/acm-team.jpg">
+                </a>
+                <a href="img/explore-certificates.jpg" data-lightbox="about" data-title="Receiving my certificate of completion for the Explore FSL program in Ottawa." style="display:none;">
+                    <img class="image-normal" src="img/explore-certificates.jpg">
+                </a>
+                <a href="img/brock-cloud-camp.jpg" data-lightbox="about" data-title="Hosting Brock's Azure Cloud Camp, where Microsoft professional Andrei Marukovich presented on the future of cloud computing." style="display:none;">
+                    <img class="image-normal" src="img/brock-cloud-camp.jpg">
+                </a>
+                <!-- insert ottawa or ireland picture -->
+            </div>
+
             <h2 class="featurette-heading">About
                 <span class="text-muted">me</span>
             </h2>
@@ -114,10 +135,10 @@
             </a>
             <h2 class="featurette-heading">Cross Border <span class="text-muted">Housing</span></h2>
             <p class="lead">
-                Winner of multiple entrepreneurial, CBH is a platform for all international or non-local students that provides listings of local student properties for rent to ease the transition into a Canadian university lifestyle. Beyond housing, a surplus of additional amenities are offered to give the user the smallest amount of work possible.</p>
+                Winner of multiple entrepreneurial, CBH is a platform for all international or non-local students that provides listings of local student properties for rent to ease the transition into a Canadian university lifestyle. Beyond housing, a surplus of additional amenities are offered to give the user the smallest amount of work possible in their travels.</p>
 
             <p class="lead">
-                My work with CBH is as a web developer, and I will be focusing on both front and back end optimization for launch this summer. Check out more <a href="http://www.crossborderhousing.com" target="_blank">here.</a>
+                My work with CBH is as a web developer, and I will be focusing on both front and back end optimization using PHP with Laravel 5. Check out more <a href="http://www.crossborderhousing.com" target="_blank">here.</a>
             </p>
         </div>
 
@@ -219,7 +240,6 @@
         </div>
 
     </div>
-    <!-- /.container -->
 
     <div class="container">
 
@@ -230,7 +250,7 @@
         <h2>Contact</h2>
         <div class="featurette">
             <p class="lead">
-                More content is on it's way, but for now you can contact me by email at <a href="mailto:me@jamesearle.ca">me@jamesearle.ca</a>
+                I am regularly updating the content on this website, but feel free email at <a href="mailto:me@jamesearle.ca">me@jamesearle.ca</a>
             </p>
 
             <!-- Icons available under the Creative Commons license (Attribution 2.5 Generic) by MaxXx via IconFinder.com -->
@@ -270,6 +290,9 @@
 
     <!-- Smooth Scroll -->
     <script src="js/scroll.js"></script>
+
+    <!-- Lightbox JS -->
+    <script src="lightbox/dist/js/lightbox.js"></script>
 
 </body>
 
