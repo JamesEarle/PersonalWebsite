@@ -188,14 +188,31 @@ body {
 }
 .grow { 
     transition: .15s ease-in-out;
+    /* animation: album-growth 1s infinite; */
 }
 .grow:hover { 
-    transform: scale(1.05); 
     transition: .15s ease-in-out;
+    transform: scale(1.05); 
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     box-shadow: 0px 0px 4px 2px #777777;
+    /* animation: album-freeze .15s; */
 }
+
+/* Experimenting with about picture animation */
+/* 
+@keyframes album-growth {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% {transform: scale(1); }
+}
+
+@keyframes album-freeze {
+    100% { transform: scale(1.05); }
+}
+*/
+
+
 .featurette-image.pull-left {
     margin-right: 40px;
 }
