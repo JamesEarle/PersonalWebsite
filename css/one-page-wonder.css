@@ -201,15 +201,30 @@ body {
 .image-normal {
     width: 350px;
     height: 350px;
+    min-height: 150px;
+    min-width: 150px;
 }
 
 .image-extra {
     width: 250px;
     height: 250px;
+    min-height: 100px;
+    min-width: 100px;
+    margin-right: 10px;
 }
+
+.superimpose {
+    background-image: url(../img/portrait-text-350x350.jpg);
+}
+
+.superimpose:hover {
+    background-image: url(../img/portrait-350x350.jpg);
+}
+
 .grow { 
     transition: .15s ease-in-out;
 }
+
 .grow:hover { 
     transform:         scale(1.05); 
     -webkit-transform: scale(1.05);
@@ -223,9 +238,9 @@ body {
     -moz-transition:    .15s ease-in-out;
     -ms-transition:     .15s ease-in-out;
 
-    -webkit-box-shadow: 0px 0px 4px 2px #777777;
-    -moz-box-shadow:    0px 0px 4px 2px #777777;
-    box-shadow:         0px 0px 4px 2px #777777;
+    -webkit-box-shadow: 0px 0px 6px 3px #777777;
+    -moz-box-shadow:    0px 0px 6px 3px #777777;
+    box-shadow:         0px 0px 6px 3px #777777;
 }
 .featurette-image.pull-left {
     margin-right: 40px;
@@ -322,6 +337,8 @@ footer {
     .image-normal {
         width: 315px;
         height: 315px;
+        background-size: 315px;
+        background-position: -10px;
     }
 
     .image-extra {
@@ -351,6 +368,10 @@ footer {
     .image-normal {
         width: 265px;
         height: 265px;
+        min-width: 265px;
+        min-height: 265px;
+        background-size:265px;
+        background-position: -5px;
     }
 
     .image-extra {
@@ -405,6 +426,9 @@ footer {
     .image-normal {
         width: 215px;
         height: 215px;
+        min-width: 215px;
+        min-height: 215px;
+        background-size: 215px;
     }
 
     .image-extra {
@@ -432,14 +456,11 @@ footer {
     }
 }
 
-@media(max-width: 450px) {
-    .image-normal {
-        width: 120px;
-        height: 120px;
-    }
-}
-
 @media(max-width:375px) {
+    .featurette {
+        padding: 25px;
+    }
+
     .featurette-divider {
         margin: 10px 0;
     }
@@ -449,22 +470,12 @@ footer {
     }
 
     .featurette-image.pull-left {
-        margin-right: 0;
+        margin-right: 5px;
         margin-bottom: 10px;
     }
 
     .featurette-image.pull-right {
         margin-bottom: 10px;
         margin-left: 0;
-    }
-
-    .image-normal {
-        width: 195px;
-        height: 195px;
-    }
-
-    .image-extra {
-        width: 95px;
-        height: 95px;
     }
 }
