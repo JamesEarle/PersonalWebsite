@@ -222,6 +222,7 @@ body {
 }
 
 .grow { 
+    left:-20px;
     transition: .15s ease-in-out;
 }
 
@@ -348,6 +349,9 @@ footer {
 }
 
 @media(max-width:768px) {
+    .superimpose {
+        left: -15px;
+    }
 
     .headline {
         padding: 55px 0;
@@ -378,9 +382,16 @@ footer {
         width: 165px;
         height: 165px;
     }
+
+    .featurette-image.pull-left {
+        margin-right: 20px;
+    }
 }
 
 @media(max-width:668px) {
+    .superimpose {
+        left: -25px;
+    }
 
     .headline {
         padding: 40px 0;
@@ -456,9 +467,18 @@ footer {
     }
 }
 
+@media(max-width:361px) {
+    .superimpose {
+        left: -100px;
+    }
+}
+
 @media(max-width:375px) {
+    .superimpose {
+        left: 0px;
+    }
     .featurette {
-        padding: 25px;
+        padding: 40px;
     }
 
     .featurette-divider {
