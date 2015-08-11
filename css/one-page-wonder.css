@@ -163,12 +163,12 @@ body {
     overflow: hidden;
 
     /* Adding borders around each featurette might look strange*/
-    /**/
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
     border: 5px solid rgba(178, 98, 75, 0.15);
+    /* #b2624b */
 
     /* IE8 */
     behavior: url(../js/PIE.htc);
@@ -259,6 +259,32 @@ body {
 
 .featurette-heading {
     font-size: 50px;
+}
+
+/* Consider using carousel instead of accordion, might be better for personal projects */
+/* For accordion list */
+.accordion-anchor {
+    text-decoration: none !important;
+}
+
+.accordion-heading {
+    font-size: 30px;
+}
+
+/* To make the accordion pieces red, rather than red border and grey boxes
+.panel-heading {
+    background-color: rgba(178, 98, 75, 0.15) !important;
+}
+*/
+
+.panel-heading:hover {
+    background-color: #dcdcdc;
+}
+
+/* Override boostrap */
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 footer {
