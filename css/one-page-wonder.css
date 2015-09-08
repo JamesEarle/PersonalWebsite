@@ -281,10 +281,15 @@ body {
     background-color: #dcdcdc;
 }
 
-/* Override boostrap */
+/* Override bootstrap */
 .h1, .h2, .h3, h1, h2, h3 {
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+h2.accordion-heading {
+    margin-top: 0px;
+    margin-bottom: 0px; 
 }
 
 footer {
