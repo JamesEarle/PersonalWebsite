@@ -20,6 +20,12 @@
     <!-- Lightbox CSS -->
     <link href="lightbox/dist/css/lightbox.css" rel="stylesheet">
 
+    <!-- Owl CSS -->
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -32,7 +38,7 @@
         var appInsights=window.appInsights||function(config){
             function s(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},r=document,f=window,e="script",o=r.createElement(e),i,u;for(o.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",r.getElementsByTagName(e)[0].parentNode.appendChild(o),t.cookie=r.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)s("track"+i.pop());return config.disableExceptionTracking||(i="onerror",s("_"+i),u=f[i],f[i]=function(config,r,f,e,o){var s=u&&u(config,r,f,e,o);return s!==!0&&t["_"+i](config,r,f,e,o),s}),t
         }({
-            instrumentationKey:"846f459a-61f5-488a-b129-30d7b96d45cd"
+            instrumentationKey:"de23b445-80f3-46e9-b983-442e0a9e2202"
         });
         
         window.appInsights=appInsights;
@@ -116,42 +122,78 @@
             <hr class="featurette-divider">
         </div>
 
-        <div class="featurette" >
+        <div class="featurette">
             <div>
-                <a href="img/portrait-350x350.jpg" data-lightbox="about" data-title="Brock Campus - Computer Commons.">
-                    <div class="superimpose featurette-image img-circle img-responsive pull-right image-normal grow"></div>
-                </a>
-                <a href="img/microsoft-hq.jpg" data-lightbox="about" data-title="Visiting the Microsoft HQ in Redmond, WA." style="display: none;">
-                    <img class="image-normal" src="img/microsoft-hq.jpg" alt="">
-                </a>
-                <a href="img/techready-flag.jpg" data-lightbox="about" data-title="Keeping it Canadian at Microsoft's annual TechReady party." style="display: none;">
-                    <img class="image-normal" src="img/techready-flag.jpg" alt="">
-                </a>
-                <a href="img/world-record.jpg" data-lightbox="about" data-title="Before beginning our (successful) attempt at the world record!" style="display: none;">
-                    <img class="image-normal" src="img/world-record.jpg" alt="">
-                </a>
-                <a href="img/explore-certificates.jpg" data-lightbox="about" data-title="Receiving my certificate of completion for the Explore FSL program in Ottawa." style="display:none;">
-                    <img class="image-normal" src="img/explore-certificates.jpg">
-                </a>
-                <a href="img/acm-team.jpg" data-lightbox="about" data-title="Arriving at the uWindsor campus for the ACM-ICPC." style="display: none;">
-                    <img class="image-normal" src="img/acm-team.jpg">
-                </a>
-                <a href="img/brock-cloud-camp.jpg" data-lightbox="about" data-title="Hosting Brock's Azure Cloud Camp, where Microsoft professional Andrei Marukovich presented on the future of cloud computing." style="display:none;">
-                    <img class="image-normal" src="img/brock-cloud-camp.jpg">
-                </a>
-                <a href="img/msp-event.jpg" data-lightbox="about" data-title="My first event as a Microsoft Student Partner!" style="display: none;">
-                    <img class="image-normal" src="img/msp-event.jpg" alt="">
-                </a>
+                <div>
+                    <a href="img/portrait-350x350.jpg" data-lightbox="about" data-title="Brock Campus - Computer Commons.">
+                        <div class="superimpose featurette-image img-circle img-responsive pull-right image-normal grow"></div>
+                    </a>
+                    <a href="img/microsoft-hq.jpg" data-lightbox="about" data-title="Visiting the Microsoft HQ in Redmond, WA." style="display: none;">
+                        <img class="image-normal" src="img/microsoft-hq.jpg" alt="">
+                    </a>
+                    <a href="img/techready-flag.jpg" data-lightbox="about" data-title="Keeping it Canadian at Microsoft's annual TechReady party." style="display: none;">
+                        <img class="image-normal" src="img/techready-flag.jpg" alt="">
+                    </a>
+                    <a href="img/world-record.jpg" data-lightbox="about" data-title="Before beginning our (successful) attempt at the world record!" style="display: none;">
+                        <img class="image-normal" src="img/world-record.jpg" alt="">
+                    </a>
+                    <a href="img/explore-certificates.jpg" data-lightbox="about" data-title="Receiving my certificate of completion for the Explore FSL program in Ottawa." style="display:none;">
+                        <img class="image-normal" src="img/explore-certificates.jpg">
+                    </a>
+                    <a href="img/acm-team.jpg" data-lightbox="about" data-title="Arriving at the uWindsor campus for the ACM-ICPC." style="display: none;">
+                        <img class="image-normal" src="img/acm-team.jpg">
+                    </a>
+                    <a href="img/brock-cloud-camp.jpg" data-lightbox="about" data-title="Hosting Brock's Azure Cloud Camp, where Microsoft professional Andrei Marukovich presented on the future of cloud computing." style="display:none;">
+                        <img class="image-normal" src="img/brock-cloud-camp.jpg">
+                    </a>
+                    <a href="img/msp-event.jpg" data-lightbox="about" data-title="My first event as a Microsoft Student Partner!" style="display: none;">
+                        <img class="image-normal" src="img/msp-event.jpg" alt="">
+                    </a>
+                </div>
+
+                <h2 class="featurette-heading">About
+                    <span class="text-muted">me</span>
+                </h2>
+                <p class="lead">I am a senior student at Brock University, St. Catharines, ON, Canada, working towards my BSc. (Honours) in Computer Science and Economics with a concentration in Software Engineering. My interests include all things tech, but I am not limited as my passions are widespread, also being an avid musician and coffee enthusiast.</p>
+
+                <p class="lead"> I have a passion for everything I do, both in my personal and professional life. Work is not
+                    something I consider a chore, but rather a challenge where I strive to exceed my own personal best, developing skills and an intricate social network along the way.
+                </p>
             </div>
+            <br>
+            <hr>
+            <div class="row">
+                <div id="my-owl-carousel" class="owl-carousel">
 
-            <h2 class="featurette-heading">About
-                <span class="text-muted">me</span>
-            </h2>
-            <p class="lead">I am a senior student at Brock University, St. Catharines, ON, Canada, working towards my BSc. (Honours) in Computer Science and Economics with a concentration in Software Engineering. My interests include all things tech, but I am not limited as my passions are widespread, also being an avid musician and coffee enthusiast.</p>
-
-            <p class="lead"> I have a passion for everything I do, both in my personal and professional life. Work is not
-                something I consider a chore, but rather a challenge where I strive to exceed my own personal best, developing skills and an intricate social network along the way.
-            </p>
+                <div class="item">
+                  <img src="img/owl-carousel/java.png" alt="Touch">
+                </div>
+                <div class="item">
+                  <img src="img/owl-carousel/php.png" alt="Touch">
+                </div>
+                <div class="item">
+                  <img src="img/owl-carousel/html5.png" alt="Touch">
+                </div>
+                <div class="item">
+                  <img src="img/owl-carousel/css3.png" alt="Touch">
+                </div>
+                <div class="item">
+                  <img src="img/owl-carousel/javascript.png" alt="Touch">
+                </div>
+                <div class="item">
+                  <img src="img/owl-carousel/visual-studio.png" alt="Touch">
+                </div>
+                <div class="item">
+                  <img src="img/owl-carousel/android.png" alt="Touch">
+                </div>
+                <div class="item">
+                  <img src="img/owl-carousel/windows.png" alt="Touch">
+                </div>
+                <div class="item">
+                  <img src="img/owl-carousel/linux.png" alt="Touch">
+                </div>
+              </div>
+            </div>
         </div>
 
         <div id="work">
@@ -390,8 +432,6 @@
         </div>
     </div>
 
-    <!-- TESTING THE ACCORDION LIST -->
-
     
     <!-- Footer -->
     <div class="container">
@@ -415,6 +455,16 @@
 
     <!-- Lightbox JS -->
     <script src="lightbox/dist/js/lightbox.js"></script>
+
+    <!-- Include js plugin -->
+    <script src="owl-carousel/owl.carousel.js"></script>
+
+    <!-- Initialize Owl -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $("#my-owl-carousel").owlCarousel();
+        });
+    </script>
 
 </body>
 
