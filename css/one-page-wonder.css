@@ -59,12 +59,7 @@ body {
     background: url('../img/github-spritesheet.png');
 }
 
-.footer-icon-google-plus {
-    background: url('../img/google-plus-spritesheet.png');
-}
-
-.footer-icon-linkedin:hover, .footer-icon-twitter:hover,
-.footer-icon-google-plus:hover {
+.footer-icon-linkedin:hover, .footer-icon-twitter:hover {
     animation: five .5s steps(5) 1;
     background-position: -300px 0;
 }
@@ -85,7 +80,7 @@ body {
 }
 
 .icon-wrapper{
-    width: 235px;
+    width: 182px;
     margin:0 auto;
 }
 
